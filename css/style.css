@@ -369,12 +369,12 @@ body {
 }
 /* Постоянные клиенты clients section */
 .clients .list {
-  display: inline-flex;
+  display: flex;
 }
 .clients .item:not(:last-child) {
   margin-right: 30px;
 }
-.clients .link {
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -382,13 +382,19 @@ body {
   height: 92px;
   border: 1px solid var(--social-icon-color);
   border-radius: 4px;
-  fill: tomato;
+  color: var(--social-icon-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .clients .icon-svg {
   width: 106px;
   height: 60px;
-  fill: var(--social-icon-color);
+  fill: currentColor;
 }
+
 /* footer */
 .footer {
   padding-top: 60px;
