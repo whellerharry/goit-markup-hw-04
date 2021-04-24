@@ -319,6 +319,7 @@ body {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--primary-bg-color);
 }
 .team-title {
   margin-top: 0;
@@ -330,12 +331,42 @@ body {
 
 .team-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16;
   font-size: var(--secondary-font-size);
   line-height: 1.18;
   color: var(--secondary-text-color);
 }
+/*  стили для social icons on the team-card */
 
+.social-icons.list {
+  display: inline-flex;
+}
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-bg-color);
+  color: var(--social-icon-color);
+}
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background-color: var(--accent-color);
+}
+.social-icon-link:hover .social-icons-svg,
+.social-icon-link:focus .social-icons-svg {
+  fill: var(--primary-bg-color);
+}
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 /* Постоянные клиенты clients section */
 .clients .list {
   display: inline-flex;
